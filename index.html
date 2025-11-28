@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-bottom: 2px solid #333;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+            justify-content: flex-end;
+            padding-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 8px 15px;
+            border: 1px solid #333;
+        }
+
+        .container {
+            display: grid;
+           
+            grid-template-columns: 1fr 220px;
+            grid-auto-rows: auto;
+            gap: 20px;
+            padding: 20px;
+            flex: 1;
+        }
+
+        
+        .main-content {
+            grid-column: 1;
+            position: relative;
+            padding: 0;
+        }
+
+        .picture {
+            background-color: #e0e0e0;
+            border: 2px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #666;
+            min-height: 250px;
+            width: 300px;
+        }
+
+      
+        .picture.left {
+            display: block;
+            float: left;
+            width: 300px;
+            min-height: 180px;
+            margin: 0 20px 20px 0;
+        }
+
+       
+        .picture-small {
+            background-color: #e0e0e0;
+            border: 2px solid #333;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #666;
+            min-height: 180px;
+            width: 280px;
+            float:right;
+        }
+
+       
+        .text-section {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+       .p{  
+        position:absolute;
+       }
+
+        .sidebar {
+            width: 150px;
+            background-color: #f0f0f0;
+            border-left: 2px solid #333;
+            padding: 20px;
+            grid-column: 2;
+            grid-row: 1 / -1;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #0015ff;
+            writing-mode: horizontal-tb;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #f0f0f0;
+            padding: 12px 20px;
+            border-top: 2px solid #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            height: 80px;
+            margin-top: auto;
+        }
+
+        footer p {
+            font-weight: bold;
+            margin-bottom: 8px;
+            justify-content: flex-start
+        }
+
+            .footer-links {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                align-items: flex-end; 
+                align-self: flex-end; 
+        }
+
+        footer a {
+            display: inline-block;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="picture left">
+                <img src="" alt="img 1">
+            </div>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <img class="picture-small" src="" alt="img 2"><p>Ut enim ad minim vetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                
+            
+        </div>
+
+        <div class="sidebar">
+            <a href="#link1"> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</a>
+            <a href="#link2">, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</a>
+            <a href="#link3"> ullamco laboris nisi ut aliquip ex ea commodo consequat.</a>
+            <a href="#link4"> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</a>
+        
+        </div>
+    </div>
+
+    <footer>
+        
+        <div class="footer-links">
+            <a href="#home">HOME</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#contact">CONTACT</a>
+      
+        </div>
+        <p>&copy; All Rights Reserved</p>
+    </footer>
+</body>
+</html>
